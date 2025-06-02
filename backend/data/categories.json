@@ -1,0 +1,205 @@
+[
+  {
+    "_id": "64e3d1234567890123456789",
+    "name": "Elektronik",
+    "description": "En son teknoloji elektronik ürünler, akıllı cihazlar ve profesyonel ekipmanlar",
+    "parentCategory": null,
+    "features": ["Garantili Ürünler", "Yetkili Servis Ağı", "Profesyonel Destek"]
+  },
+  {
+    "_id": "64e3d1234567890123456790",
+    "name": "Akıllı Telefonlar",
+    "description": "Modern akıllı telefonlar ve mobil iletişim cihazları",
+    "parentCategory": "64e3d1234567890123456789",
+    "features": ["5G Bağlantı", "Yapay Zeka Özellikleri", "Profesyonel Kamera Sistemleri"]
+  },
+  {
+    "_id": "64e3d1234567890123456791",
+    "name": "iOS Telefonlar",
+    "description": "Apple iPhone serisi akıllı telefonlar - A/M serisi işlemciler, iOS ekosistemi entegrasyonu",
+    "parentCategory": "64e3d1234567890123456790",
+    "features": ["Face ID", "iCloud Entegrasyonu", "Apple Pay", "ProRAW Kamera"]
+  },
+  {
+    "_id": "64e3d1234567890123456792",
+    "name": "Android Telefonlar",
+    "description": "Gelişmiş Android işletim sistemli akıllı telefonlar - Snapdragon/Exynos/Tensor işlemciler",
+    "parentCategory": "64e3d1234567890123456790",
+    "features": ["Google Servisleri", "Özelleştirilebilir Arayüz", "Çoklu Üretici Seçeneği"]
+  },
+  {
+    "_id": "64e3d1234567890123456793",
+    "name": "Profesyonel Telefonlar",
+    "description": "İş dünyası ve profesyoneller için özel tasarlanmış akıllı telefonlar",
+    "parentCategory": "64e3d1234567890123456790",
+    "features": ["Güvenlik Sertifikaları", "Kurumsal Yazılım Desteği", "Uzun Ömürlü Batarya"]
+  },
+  {
+    "_id": "64e3d1234567890123456794",
+    "name": "Bilgisayarlar",
+    "description": "Profesyonel ve kişisel kullanım için bilgisayar sistemleri",
+    "parentCategory": "64e3d1234567890123456789",
+    "features": ["Özelleştirilebilir Donanım", "Garanti Kapsamı", "Teknik Destek"]
+  },
+  {
+    "_id": "64e3d1234567890123456795",
+    "name": "Laptoplar",
+    "description": "Taşınabilir bilgisayarlar ve mobil iş istasyonları",
+    "parentCategory": "64e3d1234567890123456794",
+    "features": ["Ultra Taşınabilir", "Hızlı Şarj", "Profesyonel Ekran"]
+  },
+  {
+    "_id": "64e3d1234567890123456796",
+    "name": "MacOS Laptoplar",
+    "description": "Apple MacBook serisi profesyonel dizüstü bilgisayarlar",
+    "parentCategory": "64e3d1234567890123456795",
+    "features": ["M Serisi İşlemciler", "Retina Ekran", "Thunderbolt Bağlantı"]
+  },
+  {
+    "_id": "64e3d1234567890123456797",
+    "name": "Windows Laptoplar",
+    "description": "Profesyonel Windows işletim sistemli dizüstü bilgisayarlar",
+    "parentCategory": "64e3d1234567890123456795",
+    "features": ["Intel/AMD İşlemciler", "NVIDIA/AMD Grafik", "Çoklu Port Seçeneği"]
+  },
+  {
+    "_id": "64e3d1234567890123456798",
+    "name": "İş Laptopları",
+    "description": "Kurumsal kullanım için optimize edilmiş dizüstü bilgisayarlar",
+    "parentCategory": "64e3d1234567890123456795",
+    "features": ["Yönetilebilir BIOS", "Güvenlik Özellikleri", "Uzun Garanti"]
+  },
+  {
+    "_id": "64e3d1234567890123456799",
+    "name": "Oyun Laptopları",
+    "description": "Yüksek performanslı oyun odaklı dizüstü bilgisayarlar",
+    "parentCategory": "64e3d1234567890123456795",
+    "features": ["Yüksek Hz Ekran", "RGB Aydınlatma", "Gelişmiş Soğutma"]
+  },
+  {
+    "_id": "64e3d123456789012345679a",
+    "name": "Masaüstü Bilgisayarlar",
+    "description": "Profesyonel masaüstü bilgisayar sistemleri",
+    "parentCategory": "64e3d1234567890123456794",
+    "features": ["Yüksek Performans", "Modüler Yapı", "Özelleştirilebilir"]
+  },
+  {
+    "_id": "64e3d123456789012345679b",
+    "name": "MacOS Masaüstü",
+    "description": "Apple iMac ve Mac serisi profesyonel masaüstü sistemler",
+    "parentCategory": "64e3d123456789012345679a",
+    "features": ["M Serisi İşlemci", "5K Retina", "Studio Display Uyumu"]
+  },
+  {
+    "_id": "64e3d123456789012345679c",
+    "name": "Windows Masaüstü",
+    "description": "Profesyonel Windows tabanlı masaüstü iş istasyonları",
+    "parentCategory": "64e3d123456789012345679a",
+    "features": ["Çoklu GPU Desteği", "RAID Yapılandırma", "Workstation Sertifikası"]
+  },
+  {
+    "_id": "64e3d123456789012345679d",
+    "name": "Oyun Sistemleri",
+    "description": "Yüksek performanslı oyun bilgisayarları",
+    "parentCategory": "64e3d123456789012345679a",
+    "features": ["RTX Grafik", "Sıvı Soğutma", "Overclock Desteği"]
+  },
+  {
+    "_id": "64e3d123456789012345679e",
+    "name": "İş İstasyonları",
+    "description": "Profesyonel iş istasyonları ve sunucu sistemleri",
+    "parentCategory": "64e3d123456789012345679a",
+    "features": ["ECC Bellek", "Xeon İşlemci", "Quadro Grafik"]
+  },
+  {
+    "_id": "64e3d123456789012345679f",
+    "name": "Tabletler",
+    "description": "Profesyonel ve kişisel kullanım için tablet bilgisayarlar",
+    "parentCategory": "64e3d1234567890123456789",
+    "features": ["Kalem Desteği", "Klavye Uyumluluğu", "LTE Bağlantı"]
+  },
+  {
+    "_id": "64e3d12345678901234567a0",
+    "name": "Profesyonel Tabletler",
+    "description": "İş ve tasarım odaklı profesyonel tablet bilgisayarlar",
+    "parentCategory": "64e3d123456789012345679f",
+    "features": ["Hassas Stylus", "Profesyonel Apps", "Yüksek Çözünürlük"]
+  },
+  {
+    "_id": "64e3d12345678901234567a1",
+    "name": "Eğitim Tabletleri",
+    "description": "Eğitim ve öğrenim için özelleştirilmiş tablet bilgisayarlar",
+    "parentCategory": "64e3d123456789012345679f",
+    "features": ["Dayanıklı Tasarım", "Eğitim Apps", "Ebeveyn Kontrolü"]
+  },
+  {
+    "_id": "64e3d12345678901234567a2",
+    "name": "Ses Sistemleri",
+    "description": "Profesyonel ses ve müzik sistemleri",
+    "parentCategory": "64e3d1234567890123456789",
+    "features": ["Hi-Res Ses", "Bluetooth 5.0+", "Çoklu Oda Desteği"]
+  },
+  {
+    "_id": "64e3d12345678901234567a3",
+    "name": "Kulaklıklar",
+    "description": "Profesyonel ve günlük kullanım için kulaklık sistemleri",
+    "parentCategory": "64e3d12345678901234567a2",
+    "features": ["ANC Teknolojisi", "Uzun Pil Ömrü", "Çoklu Eşleştirme"]
+  },
+  {
+    "_id": "64e3d12345678901234567a4",
+    "name": "Profesyonel Kulaklıklar",
+    "description": "Stüdyo ve profesyonel kullanım için kulaklıklar",
+    "parentCategory": "64e3d12345678901234567a3",
+    "features": ["Referans Ses", "Değiştirilebilir Kablo", "Stüdyo Standartları"]
+  },
+  {
+    "_id": "64e3d12345678901234567a5",
+    "name": "Kablosuz Kulaklıklar",
+    "description": "Modern kablosuz kulaklık teknolojileri",
+    "parentCategory": "64e3d12345678901234567a3",
+    "features": ["Aktif Gürültü Önleme", "Hızlı Şarj", "Çoklu Cihaz Desteği"]
+  },
+  {
+    "_id": "64e3d12345678901234567a6",
+    "name": "Hoparlörler",
+    "description": "Profesyonel ve ev tipi hoparlör sistemleri",
+    "parentCategory": "64e3d12345678901234567a2",
+    "features": ["Yüksek Güç", "Düşük Distorsiyon", "Gelişmiş DSP"]
+  },
+  {
+    "_id": "64e3d12345678901234567a7",
+    "name": "Profesyonel Hoparlörler",
+    "description": "Stüdyo ve sahne için profesyonel hoparlör sistemleri",
+    "parentCategory": "64e3d12345678901234567a6",
+    "features": ["Stüdyo Monitör", "Bi-Amp Teknoloji", "Dengeli Giriş"]
+  },
+  {
+    "_id": "64e3d12345678901234567a8",
+    "name": "Ev Sinema Sistemleri",
+    "description": "Profesyonel ev sinema ve müzik sistemleri",
+    "parentCategory": "64e3d12345678901234567a6",
+    "features": ["Dolby Atmos", "Kablosuz Arka", "Subwoofer"]
+  },
+  {
+    "_id": "64e3d12345678901234567a9",
+    "name": "Giyilebilir Teknoloji",
+    "description": "Akıllı giyilebilir teknoloji ürünleri",
+    "parentCategory": "64e3d1234567890123456789",
+    "features": ["Sağlık Takibi", "GPS", "Akıllı Bildirimler"]
+  },
+  {
+    "_id": "64e3d12345678901234567aa",
+    "name": "Akıllı Saatler",
+    "description": "Profesyonel ve spor odaklı akıllı saatler",
+    "parentCategory": "64e3d12345678901234567a9",
+    "features": ["EKG Ölçümü", "Spor Modları", "Uyku Analizi"]
+  },
+  {
+    "_id": "64e3d12345678901234567ab",
+    "name": "Akıllı Bileklikler",
+    "description": "Fitness ve aktivite takip bileklikleri",
+    "parentCategory": "64e3d12345678901234567a9",
+    "features": ["Nabız Ölçer", "Adım Sayar", "Su Geçirmez"]
+  }
+]

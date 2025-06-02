@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "64e3d12345678901234567b6",
+    "name": "Apple",
+    "description": "iPhone, MacBook ve iPad üreticisi"
+  },
+  {
+    "_id": "64e3d12345678901234567b7",
+    "name": "Samsung",
+    "description": "Akıllı telefon ve elektronik cihaz üreticisi"
+  },
+  {
+    "_id": "64e3d12345678901234567b8",
+    "name": "Lenovo",
+    "description": "Bilgisayar ve tablet üreticisi"
+  },
+  {
+    "_id": "64e3d12345678901234567b9",
+    "name": "Sony",
+    "description": "Elektronik ve eğlence ürünleri üreticisi"
+  },
+  {
+    "_id": "64e3d12345678901234567ba",
+    "name": "HP",
+    "description": "Bilgisayar ve yazıcı üreticisi"
+  },
+  {
+    "_id": "64e3d12345678901234567bb",
+    "name": "Google",
+    "description": "Teknoloji ve yazılım şirketi"
+  },
+  {
+    "_id": "64e3d12345678901234567bc",
+    "name": "BlackBerry",
+    "description": "Güvenli mobil cihaz üreticisi"
+  },
+  {
+    "_id": "64e3d12345678901234567bd",
+    "name": "ASUS",
+    "description": "Bilgisayar ve elektronik üreticisi"
+  },
+  {
+    "_id": "64e3d12345678901234567be",
+    "name": "Yamaha",
+    "description": "Müzik ve ses ekipmanları üreticisi"
+  },
+  {
+    "_id": "64e3d12345678901234567bf",
+    "name": "JBL",
+    "description": "Ses sistemleri üreticisi"
+  }
+]

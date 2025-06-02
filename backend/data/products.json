@@ -1,0 +1,424 @@
+[
+  {
+    "_id": "64e3d12345678901234567ac",
+    "name": "iPhone 14 Pro",
+    "title": "Apple iPhone 14 Pro 256GB Uzay Siyahı",
+    "description": "Apple'ın en yeni amiral gemisi telefonu - A16 Bionic işlemci, 48MP ProRAW kamera, Dynamic Island teknolojisi, Super Retina XDR OLED ekran",
+    "price": 54999,
+    "stock": 50,
+    "sku": "APL-IP14P-256-BLK",
+    "specifications": [
+      {
+        "name": "Ekran",
+        "value": "6.1 inç Super Retina XDR OLED"
+      },
+      {
+        "name": "İşlemci",
+        "value": "A16 Bionic"
+      },
+      {
+        "name": "RAM",
+        "value": "6GB"
+      },
+      {
+        "name": "Depolama",
+        "value": "256GB"
+      },
+      {
+        "name": "Kamera",
+        "value": "48MP Ana + 12MP Ultra Geniş + 12MP Telefoto"
+      },
+      {
+        "name": "Batarya",
+        "value": "3200 mAh"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/phone1.jpg",
+        "public_id": "phone1"
+      }
+    ],
+    "brand": "Apple",
+    "category": "64e3d1234567890123456791"
+  },
+  {
+    "_id": "64e3d12345678901234567ad",
+    "name": "MacBook Pro M2",
+    "title": "Apple MacBook Pro M2 16GB 512GB",
+    "description": "M2 çipli profesyonel dizüstü bilgisayar - 13.3 inç Retina ekran, 20 saat pil ömrü, aktif soğutma sistemi",
+    "price": 49999,
+    "stock": 30,
+    "sku": "APL-MBP-M2-512",
+    "specifications": [
+      {
+        "name": "Ekran",
+        "value": "13.3 inç Retina"
+      },
+      {
+        "name": "İşlemci",
+        "value": "Apple M2"
+      },
+      {
+        "name": "RAM",
+        "value": "16GB"
+      },
+      {
+        "name": "Depolama",
+        "value": "512GB SSD"
+      },
+      {
+        "name": "Grafik",
+        "value": "10 çekirdekli GPU"
+      },
+      {
+        "name": "Pil Ömrü",
+        "value": "20 saat"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/laptop1.jpg",
+        "public_id": "laptop1"
+      }
+    ],
+    "brand": "Apple",
+    "category": "64e3d1234567890123456796"
+  },
+  {
+    "_id": "64e3d12345678901234567ae",
+    "name": "Samsung Galaxy S23 Ultra",
+    "title": "Samsung Galaxy S23 Ultra 512GB",
+    "description": "Samsung'un en üst segment telefonu - Snapdragon 8 Gen 2 işlemci, 200MP ana kamera, S Pen desteği, 6.8 inç Dynamic AMOLED ekran",
+    "price": 44999,
+    "stock": 45,
+    "sku": "SMS-S23U-512-BLK",
+    "specifications": [
+      {
+        "name": "Ekran",
+        "value": "6.8 inç Dynamic AMOLED 2X"
+      },
+      {
+        "name": "İşlemci",
+        "value": "Snapdragon 8 Gen 2"
+      },
+      {
+        "name": "RAM",
+        "value": "12GB"
+      },
+      {
+        "name": "Depolama",
+        "value": "512GB"
+      },
+      {
+        "name": "Kamera",
+        "value": "200MP Ana + 12MP Ultra Geniş + 10MP Telefoto"
+      },
+      {
+        "name": "Batarya",
+        "value": "5000 mAh"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/phone2.jpg",
+        "public_id": "phone2"
+      }
+    ],
+    "brand": "Samsung",
+    "category": "64e3d1234567890123456792"
+  },
+  {
+    "_id": "64e3d12345678901234567af",
+    "name": "Google Pixel 7 Pro",
+    "title": "Google Pixel 7 Pro 256GB Obsidyan",
+    "description": "Google'ın amiral gemisi telefonu - Tensor G2 işlemci, gelişmiş yapay zeka özellikleri, üstün kamera performansı",
+    "price": 39999,
+    "stock": 35,
+    "sku": "GGL-P7P-256-BLK",
+    "specifications": [
+      {
+        "name": "Ekran",
+        "value": "6.7 inç LTPO OLED"
+      },
+      {
+        "name": "İşlemci",
+        "value": "Google Tensor G2"
+      },
+      {
+        "name": "RAM",
+        "value": "12GB"
+      },
+      {
+        "name": "Depolama",
+        "value": "256GB"
+      },
+      {
+        "name": "Kamera",
+        "value": "50MP Ana + 12MP Ultra Geniş + 48MP Telefoto"
+      },
+      {
+        "name": "Batarya",
+        "value": "5000 mAh"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/pixel7pro.jpg",
+        "public_id": "pixel7pro"
+      }
+    ],
+    "brand": "Google",
+    "category": "64e3d1234567890123456792"
+  },
+  {
+    "_id": "64e3d12345678901234567b0",
+    "name": "BlackBerry Key3",
+    "title": "BlackBerry Key3 Enterprise Edition",
+    "description": "Kurumsal kullanım için özel güvenlik önlemleri, fiziksel QWERTY klavye, gelişmiş şifreleme",
+    "price": 34999,
+    "stock": 25,
+    "sku": "BB-KEY3-256-BLK",
+    "specifications": [
+      {
+        "name": "Ekran",
+        "value": "4.5 inç IPS LCD"
+      },
+      {
+        "name": "İşlemci",
+        "value": "Snapdragon 888"
+      },
+      {
+        "name": "RAM",
+        "value": "8GB"
+      },
+      {
+        "name": "Depolama",
+        "value": "256GB"
+      },
+      {
+        "name": "Güvenlik",
+        "value": "FIPS 140-2 Sertifikası"
+      },
+      {
+        "name": "Batarya",
+        "value": "4000 mAh"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/bbkey3.jpg",
+        "public_id": "bbkey3"
+      }
+    ],
+    "brand": "BlackBerry",
+    "category": "64e3d1234567890123456793"
+  },
+  {
+    "_id": "64e3d12345678901234567b1",
+    "name": "ThinkPad X1 Carbon",
+    "title": "Lenovo ThinkPad X1 Carbon Gen 10",
+    "description": "Kurumsal kullanım için Intel vPro platformlu profesyonel laptop - MIL-STD testlerinden geçmiş dayanıklı tasarım",
+    "price": 45999,
+    "stock": 20,
+    "sku": "LNV-X1C-G10-I7",
+    "specifications": [
+      {
+        "name": "Ekran",
+        "value": "14 inç 2.8K OLED"
+      },
+      {
+        "name": "İşlemci",
+        "value": "Intel Core i7-1280P vPro"
+      },
+      {
+        "name": "RAM",
+        "value": "32GB LPDDR5"
+      },
+      {
+        "name": "Depolama",
+        "value": "1TB PCIe Gen4 SSD"
+      },
+      {
+        "name": "Güvenlik",
+        "value": "TPM 2.0, Parmak İzi, IR Kamera"
+      },
+      {
+        "name": "Batarya",
+        "value": "57Wh, Hızlı Şarj"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/thinkpadx1.jpg",
+        "public_id": "thinkpadx1"
+      }
+    ],
+    "brand": "Lenovo",
+    "category": "64e3d1234567890123456798"
+  },
+  {
+    "_id": "64e3d12345678901234567b2",
+    "name": "HP ZBook Fury",
+    "title": "HP ZBook Fury G9 Workstation",
+    "description": "Profesyonel iş istasyonu - NVIDIA RTX A5500 grafik, Intel Xeon işlemci, ISV sertifikalı",
+    "price": 89999,
+    "stock": 10,
+    "sku": "HP-ZBF-G9-XEON",
+    "specifications": [
+      {
+        "name": "İşlemci",
+        "value": "Intel Xeon W-11955M"
+      },
+      {
+        "name": "RAM",
+        "value": "128GB ECC DDR5"
+      },
+      {
+        "name": "Depolama",
+        "value": "4TB NVMe SSD (RAID)"
+      },
+      {
+        "name": "Ekran Kartı",
+        "value": "NVIDIA RTX A5500 16GB"
+      },
+      {
+        "name": "Ekran",
+        "value": "17.3 inç DreamColor 4K"
+      },
+      {
+        "name": "Sertifikalar",
+        "value": "AutoCAD, CATIA, Siemens NX"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/zbook.jpg",
+        "public_id": "zbook"
+      }
+    ],
+    "brand": "HP",
+    "category": "64e3d123456789012345679e"
+  },
+  {
+    "_id": "64e3d12345678901234567b3",
+    "name": "Sony MDR-7506",
+    "title": "Sony MDR-7506 Profesyonel Stüdyo Kulaklığı",
+    "description": "Stüdyo standardı referans kulaklık - Geniş frekans aralığı, katlanabilir tasarım",
+    "price": 3999,
+    "stock": 50,
+    "sku": "SNY-MDR7506",
+    "specifications": [
+      {
+        "name": "Tip",
+        "value": "Kapalı Arka Dinamik"
+      },
+      {
+        "name": "Frekans Aralığı",
+        "value": "10Hz - 20kHz"
+      },
+      {
+        "name": "Empedans",
+        "value": "63 ohm"
+      },
+      {
+        "name": "Sürücü",
+        "value": "40mm Neodymium"
+      },
+      {
+        "name": "Kablo",
+        "value": "3m Helezonik"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/mdr7506.jpg",
+        "public_id": "mdr7506"
+      }
+    ],
+    "brand": "Sony",
+    "category": "64e3d12345678901234567a4"
+  },
+  {
+    "_id": "64e3d12345678901234567b4",
+    "name": "Yamaha HS8",
+    "title": "Yamaha HS8 Aktif Stüdyo Monitörü",
+    "description": "Profesyonel stüdyo referans monitörü - Bi-amp sistemi, Room Control özellikleri",
+    "price": 12999,
+    "stock": 30,
+    "sku": "YMH-HS8-BLK",
+    "specifications": [
+      {
+        "name": "Güç",
+        "value": "120W (LF:75W, HF:45W)"
+      },
+      {
+        "name": "Frekans Yanıtı",
+        "value": "38Hz - 30kHz"
+      },
+      {
+        "name": "Sürücüler",
+        "value": "8 inç Woofer, 1 inç Tweeter"
+      },
+      {
+        "name": "Giriş",
+        "value": "XLR, TRS"
+      },
+      {
+        "name": "Kontroller",
+        "value": "Room Control, High Trim"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/hs8.jpg",
+        "public_id": "hs8"
+      }
+    ],
+    "brand": "Yamaha",
+    "category": "64e3d12345678901234567a7"
+  },
+  {
+    "_id": "64e3d12345678901234567b5",
+    "name": "ASUS ROG Strix G16",
+    "title": "ASUS ROG Strix G16 i9-13980HX RTX 4080",
+    "description": "Yüksek performanslı oyun laptopu - 16 inç QHD+ ekran, RGB aydınlatma",
+    "price": 79999,
+    "stock": 20,
+    "sku": "ASU-ROGG16-4080",
+    "specifications": [
+      {
+        "name": "Ekran",
+        "value": "16 inç QHD+ 240Hz"
+      },
+      {
+        "name": "İşlemci",
+        "value": "Intel Core i9-13980HX"
+      },
+      {
+        "name": "RAM",
+        "value": "32GB DDR5"
+      },
+      {
+        "name": "Depolama",
+        "value": "2TB NVMe SSD"
+      },
+      {
+        "name": "Ekran Kartı",
+        "value": "NVIDIA RTX 4080 12GB"
+      },
+      {
+        "name": "Batarya",
+        "value": "90WHr"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://res.cloudinary.com/demo/image/upload/rogg16.jpg",
+        "public_id": "rogg16"
+      }
+    ],
+    "brand": "ASUS",
+    "category": "64e3d1234567890123456799"
+  }
+]
