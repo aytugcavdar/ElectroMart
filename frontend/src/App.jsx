@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css'
 import Navbar from './layout/Navbar'
 import Home from './pages/Home'
-import Auth from './pages/auth'
+import Auth from './pages/Auth' 
 import VerifyEmail from "./components/VerifyEmail";
 import ForgotPassword from "./components/ForgotPassword";
 import PasswordReset from "./components/PasswordReset";
@@ -11,28 +12,33 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import Admin from './pages/Admin';
 import Brand from './pages/Brand';
-import BrandDetails from './pages/BrandDetail';
+import BrandDetails from './pages/BrandDetail'; 
 import ProductDetail from './pages/ProductDetail';
 import Category from './pages/Category';
 import CategoryProductsPage from './pages/CategoryProductsPage';
 import Products from './pages/Products';
 import Profile from './pages/Profile';
-import CartPage from './pages/cartPages'; 
+import CartPage from './pages/CartPages'; 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-function App() {
+
+
+function AppContent() {
+  const location = useLocation();
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getUserProfile());
-  }
-  , [dispatch]  
-  )
+  }, [dispatch]);
 
+  const noNavbarRoutes = ['/auth', '/verify-email', '/reset-password', '/resetpassword'];
+
+  const shouldHideNavbar = noNavbarRoutes.some(route => location.pathname.startsWith(route));
 
   return (
-    <Router>
-      <Navbar />
-       <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
+    <>
+      {!shouldHideNavbar && <Navbar />} 
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<Auth />} />
@@ -50,8 +56,16 @@ function App() {
         <Route path='/me' element={<Profile />} />
         <Route path='/cart' element={<CartPage />} />
       </Routes>
-    </Router>
-  )
+    </>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+export default App;
