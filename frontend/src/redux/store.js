@@ -4,6 +4,7 @@ import authReducer from './authSlice';
 import brandReducer from './brandSlice';
 import categoryReducer from './categorySlice';
 import productReducer from './productSlice';
+import cartReducer from './cartSlice';
 
 
 
@@ -13,7 +14,8 @@ export const store = configureStore({
     auth: authReducer,
     brand: brandReducer,
     category: categoryReducer,
-    product: productReducer
+    product: productReducer,
+    cart: cartReducer,
   },
   
 });

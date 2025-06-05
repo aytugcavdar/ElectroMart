@@ -26,11 +26,10 @@ const ProductManagement = () => {
   const [editingProduct, setEditingProduct] = useState(null);
 
   useEffect(() => {
-    // if (productStatus === 'idle' || products.length === 0) {
+
         dispatch(getProducts());
-    // }
-    // Form için markalar ve kategoriler de çekilmeli, Admin.jsx zaten çekiyor.
-    // Eğer çekilmiyorsa burada dispatch(getBrands()); dispatch(getCategories()); yapılabilir.
+
+
   }, [dispatch]);
 
   const handleAddNew = () => {

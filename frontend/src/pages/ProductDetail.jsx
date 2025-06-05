@@ -3,21 +3,58 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProduct } from '../redux/productSlice';
+import { toast } from 'react-toastify';
+import { addToCart } from '../redux/cartSlice';
+import { useState } from 'react';
 
 const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { product, loading, error } = useSelector((state) => state.product);
-
+  const { isAuthenticated } = useSelector((state) => state.auth);
+  const [quantity, setQuantity] = useState(1);
   useEffect(() => {
     dispatch(getProduct(id));
   }, [dispatch, id]);
 
-  // Sepete ekle fonksiyonu (örnek)
+
+  const increment = () => {
+    if (quantity < (product?.stock || 1)) {
+      setQuantity(quantity + 1);
+    }
+  };
+
+  const decrement = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
   const handleAddToCart = () => {
-    alert('Ürün sepete eklendi!');
-    // Burada sepete ekleme işlemleri yapılabilir
+    if (!isAuthenticated) {
+        toast.error('Ürünü sepete eklemek için giriş yapmalısınız.');
+        navigate('/auth');
+        return;
+    }
+    if (product && product.stock > 0) {
+      dispatch(addToCart({
+        productId: product._id,
+        quantity: quantity, 
+        price: product.discountedPrice > 0 ? product.discountedPrice : product.price,
+        name: product.title,
+        image: product.images?.[0]?.url || '/default-product.png'
+      }))
+      .unwrap()
+      .then(() => {
+        toast.success(`${product.title} sepete eklendi!`);
+      })
+      .catch((err) => {
+        toast.error(`Hata: ${err || 'Ürün sepete eklenemedi.'}`);
+      });
+    } else {
+        toast.warn('Bu ürün şu anda stokta bulunmuyor.');
+    }
   };
 
   // İndirimli fiyat gösterme fonksiyonu
@@ -204,9 +241,9 @@ const ProductDetail = () => {
             
             <div className="card-actions">
               <div className="join">
-                <button className="btn btn-outline join-item">-</button>
-                <input className="input input-bordered join-item w-20 text-center" type="text" value="1" readOnly />
-                <button className="btn btn-outline join-item">+</button>
+                <button className="btn btn-outline join-item" onClick={decrement}>-</button>
+                <input className="input input-bordered join-item w-20 text-center" type="text" value={quantity} readOnly />
+                <button className="btn btn-outline join-item" onClick={increment}>+</button>
               </div>
               
               <button 

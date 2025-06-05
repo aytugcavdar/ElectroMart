@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { logoutUser } from "../redux/authSlice";
 import { FaShoppingCart, FaSearch, FaBars } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
+import { fetchCart, clearCartState } from "../redux/cartSlice";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
   const { user, isAuthenticated } = useSelector((state) => state.auth);
 
   console.log(isAuthenticated, user);
-  const { cartItems } = useSelector((state) => state.cart) || { cartItems: [] };
+  const { itemCount } = useSelector((state) => state.cart);
 
   // Handle scroll effect
   useEffect(() => {
@@ -48,9 +49,18 @@ const Navbar = () => {
     setIsProfileOpen(!isProfileOpen);
     if (isMobileMenuOpen) setIsMobileMenuOpen(false);
   };
+    useEffect(() => {
+    if (isAuthenticated) {
+      dispatch(fetchCart()); // Kullanıcı giriş yaptığında sepetini getir
+    } else {
+      dispatch(clearCartState()); // Kullanıcı çıkış yaptığında sepet state'ini temizle
+    }
+  }, [isAuthenticated, dispatch]);
 
   const handleLogout = () => {
     dispatch(logoutUser());
+    dispatch(clearCartState());
+    
     navigate("/");
   };
 
@@ -137,13 +147,14 @@ const Navbar = () => {
 
             {/* Shopping Cart */}
             <Link to="/cart" className="btn btn-ghost btn-circle ml-1">
-              <div className="indicator">
-                <FaShoppingCart className="h-5 w-5" />
-                {cartItems.length > 0 && (
-                  <span className="badge badge-sm indicator-item badge-primary">{cartItems.length}</span>
-                )}
-              </div>
-            </Link>
+          <div className="indicator">
+            <FaShoppingCart className="h-5 w-5" />
+            {/* itemCount > 0 && ( // cartItems.length yerine itemCount kullan) */}
+            {itemCount > 0 && (
+              <span className="badge badge-sm indicator-item badge-primary">{itemCount}</span>
+            )}
+          </div>
+        </Link>
 
             {/* User Profile / Auth */}
             {isAuthenticated && user ? (

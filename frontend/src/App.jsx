@@ -17,7 +17,9 @@ import Category from './pages/Category';
 import CategoryProductsPage from './pages/CategoryProductsPage';
 import Products from './pages/Products';
 import Profile from './pages/Profile';
-
+import CartPage from './pages/cartPages'; 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -30,6 +32,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+       <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<Auth />} />
@@ -45,6 +48,7 @@ function App() {
         <Route path='/categories' element={<Category />} />
         <Route path='/category/:id' element={<CategoryProductsPage />} />
         <Route path='/me' element={<Profile />} />
+        <Route path='/cart' element={<CartPage />} />
       </Routes>
     </Router>
   )

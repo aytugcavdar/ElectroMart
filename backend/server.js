@@ -7,11 +7,13 @@ const cloudinary = require("cloudinary").v2;
 const bodyParser = require("body-parser");
 const fileUpload = require('express-fileupload');
 const errorHandler = require("./middlewares/errorHandler");
+const helmet = require("helmet");
 //MODELS
 require("./models/User");
 require("./models/Category");
 require("./models/Brand");
 require("./models/Product");
+require("./models/Cart");
 
 
 
@@ -19,6 +21,7 @@ const authRoutes = require("./routes/authRoute");
 const categoryRoutes = require("./routes/categoriesRoute");
 const brandRoutes = require("./routes/brandsRoute");
 const productRoutes = require("./routes/productsRoute");
+const cartRoutes = require("./routes/cartRoute")
 
 
 dotenv.config();
@@ -27,7 +30,10 @@ cloudinary.config({
     api_key: process.env.CLOUDINARY_API_KEY, 
     api_secret: process.env.CLOUDINARY_API_SECRET
 });
+
 const app = express();
+app.use(helmet());
+
 app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 app.use(cookieParser());
 app.use(bodyParser.json({ limit: "50mb" }));
@@ -42,6 +48,7 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/category', categoryRoutes);
 app.use('/api/v1/brand', brandRoutes);
 app.use('/api/v1/product', productRoutes);
+app.use('/api/v1/cart', cartRoutes); 
 
 app.use(errorHandler);
 
