@@ -22,18 +22,14 @@ const advancedResults = (model, populate) => async (req, res, next) => {
 
   // Arama terimi varsa, filtrelere ekle
   if (searchTerm) {
-
-      filter.$or = [
-          { title: { $regex: searchTerm, $options: 'i' } }, // i: case-insensitive (büyük/küçük harf duyarsız)
-          
-          
-        
-      ];
-    
-    
-  }
-
-  // Temel sorguyu oluştur (filtre objesini kullan)
+    const searchRegex = { $regex: searchTerm, $options: 'i' };
+    filter.$or = [
+        { title: searchRegex },
+        { description: searchRegex },
+        { sku: searchRegex }
+    ];
+}
+ // Temel sorguyu oluştur (filtre objesini kullan)
   let query = model.find(filter);
 
 
